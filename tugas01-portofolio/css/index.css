@@ -10,22 +10,6 @@ nav {
   background-image: url(../assets/bg.png);
 }
 
-#brand:hover {
-  animation-name: spin;
-  animation-duration: 5000ms;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-}
-
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 p,
 h1 {
   color: #363636;
@@ -61,6 +45,10 @@ li {
   border-radius: 0px;
   font-family: "Source Sans Pro";
   color: #363636;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 .card-body {
@@ -69,7 +57,8 @@ li {
 
 .card:hover {
   opacity: 100%;
-  transition: 0.5s ease;
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
 }
 
 a {
@@ -143,4 +132,61 @@ input:focus {
 ::selection {
   background-color: #3b4a3f;
   color: white;
+}
+
+#slide {
+  position: relative;
+  left: 1000px;
+  -webkit-animation: slide 0.5s forwards;
+  -webkit-animation-delay: 2s;
+  animation: slide 0.5s forwards;
+  animation-delay: 2s;
+}
+
+@-webkit-keyframes slide {
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes slide {
+  100% {
+    left: 0;
+  }
+}
+
+#fadein {
+  opacity: 0%;
+  -webkit-animation: fadein 0.5s forwards;
+  -webkit-animation-delay: 1s;
+  animation: fadein 0.5s forwards;
+  animation-delay: 1s;
+}
+
+@-webkit-keyframes fadein {
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes fadein {
+  100% {
+    opacity: 100%;
+  }
+}
+
+#brand:hover {
+  animation-name: spin;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
