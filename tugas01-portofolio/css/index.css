@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;700&family=Merriweather:wght@400;700&family=Source+Sans+Pro:ital@0;1&display=swap");
+
+body {
+  /* ... */
+  /* background-image: url(http://api.thumbr.it/whitenoise-361x370.png?background=e8e7e1ff&noise=626262&density=8&opacity=10); */
+  background-image: url(../assets/bg.png);
+}
+
+nav {
+  background-image: url(../assets/bg.png);
+}
+
+#brand:hover {
+  animation-name: spin;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+p,
+h1 {
+  color: #363636;
+  font-family: "Fira Mono", monospace;
+}
+
+li {
+  font-family: "Fira Mono", monospace;
+}
+
+.nav-link {
+  color: #363636;
+  font-weight: bold;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-decoration: none;
+  background-image: url(../assets/bg2.png);
+  color: #edefe5;
+}
+
+.fa:hover,
+.fa:focus {
+  color: #edefe5;
+  opacity: 75%;
+}
+
+.card {
+  opacity: 60%;
+  border-radius: 0px;
+  font-family: "Source Sans Pro";
+  color: #363636;
+}
+
+.card-body {
+  background-image: url(../assets/bg.png);
+}
+
+.card:hover {
+  opacity: 100%;
+  transition: 0.5s ease;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul.navbar-nav a:hover {
+  color: #5a7260;
+}
+
+h1,
+h3 {
+  font-family: "Merriweather", serif;
+  font-weight: bold;
+  color: #363636;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 970px;
+  }
+}
+
+#contact {
+  background-image: url(../assets/bg2.png);
+  padding-bottom: 100px;
+}
+
+section#contact p {
+  color: #edefe5;
+  font-family: "Fira Mono", monospace;
+}
+
+input {
+  background-image: url(../assets/bg2.png);
+  font-family: "Fira Mono", monospace;
+  font-size: 15px;
+  color: #edefe5;
+  width: 70%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: none;
+  border-bottom: 3px solid #b9bdaa;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+.btn {
+  background-color: #2f4858;
+  color: #edefe5;
+  border: none;
+  border-radius: 15px;
+  padding: 10px 15px;
+  font-family: "Fira Mono", monospace;
+  font-weight: bold;
+}
+
+.btn:hover {
+  opacity: 75%;
+  background-color: #2f4858;
+}
+
+::placeholder {
+  color: #b9bdaa;
+  font-family: "Fira Mono", monospace;
+}
+
+::selection {
+  background-color: #3b4a3f;
+  color: white;
+}
