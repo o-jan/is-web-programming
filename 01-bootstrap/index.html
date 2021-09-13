@@ -171,7 +171,7 @@
               <div class="mb-3">
                 <input placeholder="Email" />
               </div>
-              <button type="submit" class="btn btn-primary">Subscribe</button>
+              <button type="submit" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Subscribe</button>
             </form>
           </div>
           <div
@@ -195,6 +195,24 @@
         <i>you've found an easter egg: hover on the brand</i>
       </p>
     </section>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">You're subscribed!</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            Thanks!
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- bootstrap js -->
     <script
