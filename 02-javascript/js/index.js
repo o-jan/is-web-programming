@@ -8,7 +8,7 @@ button.addEventListener("click", () => {button.parentElement.parentElement.remov
 function addList(eve) {
 	eve.preventDefault();
 	if (input.value == "") {
-		alert("It cannot be empty mate!");
+		alert("Item cannot be empty!");
 		return;
 	}
 
@@ -16,7 +16,7 @@ function addList(eve) {
 
 	for (let i = 0; i < entry.length; i++) {
 		if (entry[i].innerText === input.value) {
-			alert("There is a same thing here mate!");
+			alert("Item already exist!");
 			input.focus();
 			return;
 		}
